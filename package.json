@@ -1,0 +1,59 @@
+{
+  "name": "dshnotebook",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Markdown notebooks for DeepSeek Harness: capture replies, edit notes, paste images, search, trash/undo, back up.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "ocr.swift",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "license": "MIT",
+  "author": "JeremyChen (https://github.com/JeremyCHEN2001)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyCHEN2001/dsh-notebook.git"
+  },
+  "homepage": "https://github.com/JeremyCHEN2001/dsh-notebook#readme",
+  "bugs": {
+    "url": "https://github.com/JeremyCHEN2001/dsh-notebook/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "plugin",
+    "notebook",
+    "notes",
+    "markdown",
+    "image-paste",
+    "ocr"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js"
+  }
+}

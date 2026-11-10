@@ -1,0 +1,6 @@
+node_modules/
+.ocr-cache/
+*.tgz
+.DS_Store
+.env
+npm-debug.log*
