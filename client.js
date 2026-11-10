@@ -10,7 +10,7 @@
  * images support paste, drop, file picker, URL import, captions, and a viewer.
  */
 window.__ModuleLoader__.load({
-  id: 'dshnotebook',
+  id: '@hjeremy/dshnotebook',
   factory (require) {
     const React = require('react')
     const h = React.createElement

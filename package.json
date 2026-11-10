@@ -1,5 +1,5 @@
 {
-  "name": "dshnotebook",
+  "name": "@hjeremy/dshnotebook",
   "version": "1.0.0",
   "type": "module",
   "description": "Markdown notebooks for DeepSeek Harness: capture replies, edit notes, paste images, search, trash/undo, back up.",
@@ -55,5 +55,8 @@
   ],
   "scripts": {
     "check": "node --check index.js && node --check client.js"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
