@@ -6,9 +6,9 @@
 
 ## 安装
 
-**npm（发布后推荐）**
+**npm（尚未发布）**
 
-在 Harness 的 Plugin Manager 中安装 `dshnotebook`；或让 Agent 安装该 npm 包。安装后需要一次 profile 重新组合（禁用/启用插件或重启应用）。
+npm 包名已预留为 `dshnotebook`；发布后可在 Harness 的 Plugin Manager 中安装，或让 Agent 安装该 npm 包。当前请先用下面的源码方式安装。安装后需要一次 profile 重新组合（禁用/启用插件或重启应用）。
 
 **从源码**
 
